@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import com.grupo5.ciclo4a.minisuper.model.Producto;
 
-public class ProductoRepository extends MongoRepository<Producto, String> {
+public interface ProductoRepository extends MongoRepository<Producto, String> {
 	
 	List<Producto> findByCodigoproducto (Long codigoproducto);
 	
